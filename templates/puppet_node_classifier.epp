@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+curl -X GET --header "Authorization: Token <%= $token %>" "http://<%= $address %>:<%= $port %>/api/nodes/node_classifier/?master_id=<%= $master_uuid %>&certname=$1"
