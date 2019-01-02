@@ -4,7 +4,7 @@ grua::exec_path: '/usr/local/bin/puppet_node_classifier'
 grua::puppetconf_path: '/etc/puppetlabs/puppet/puppet.conf'
 grua::is_ca: false
 grua::puppet_ssl_path: '/etc/puppetlabs/puppet/ssl'
-grua::puppetserver_address: %{facts.networking.ip}
+grua::puppetserver_address: '%{facts.networking.ip}'
 grua::puppetserver_port: 8140
-grua::puppetdb_address: %{facts.networking.ip}
+grua::puppetdb_address: '%{facts.networking.ip}'
 grua::puppetdb_port: 8080
