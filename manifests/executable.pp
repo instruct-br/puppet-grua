@@ -43,7 +43,11 @@ class grua::executable {
     setting => 'authorization.rules',
     value   => $auth_rule,
     type    => array_element,
-    notify  => Service['puppetserver'],
+  }
+
+  if defined(Service['puppetserver']) {
+    Hocon_setting['rule-classifier_enviroments_classes']
+      ~> Service['puppetserver']
   }
 
 }

@@ -3,4 +3,7 @@
 ---
 fixtures:
   forge_modules:
-#     stdlib: "puppetlabs/stdlib"
+     stdlib: "puppetlabs/stdlib"
+     puppet_certificate: "reidmv-puppet_certificate"
+     hocon: "puppetlabs-hocon"
+
